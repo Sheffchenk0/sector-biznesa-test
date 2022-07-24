@@ -1,0 +1,22 @@
+.item {
+    width: 100%;
+    display: flex;
+}
+
+.col {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 4;
+    padding: 10px 8px;
+    border-left: 1px solid #e3e6ec;
+    border-bottom: 1px solid #e3e6ec;
+    font-size: 13px;
+    &:last-of-type {
+        border-right: 1px solid #e3e6ec;
+    }
+    &:first-child {
+        flex: 1;
+    }
+}

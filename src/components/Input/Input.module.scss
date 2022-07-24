@@ -1,0 +1,30 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-width: 200px;
+    display: flex;
+}
+
+.input {
+    width: 100%;
+    height: 52px;
+    background: #5a5c66;
+    border: none;
+    padding: 15px 45px 15px 20px;
+    //
+    font-weight: 400;
+    font-size: 14px;
+    color: #b3b7bf;
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+
+.searchIcon {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 19px;
+    transform: translateY(-50%);
+}

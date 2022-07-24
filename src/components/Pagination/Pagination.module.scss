@@ -1,0 +1,46 @@
+.pagination {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    & button {
+        top: -6px;
+        font-size: 24px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        position: absolute;
+        &:first-child {
+            width: 50px;
+            left: 40px;
+            background-color: red;
+        }
+        &:last-child {
+            right: 40px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    cursor: pointer;
+    margin: 0px 5px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    &:hover {
+        text-decoration: underline;
+    }
+}

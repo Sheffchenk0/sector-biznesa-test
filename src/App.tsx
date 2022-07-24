@@ -1,25 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Suspense, useEffect, useState } from 'react';
+// import { Route, Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router';
+import { TablePage } from 'pages/TablePage';
+import { PAGES } from 'lib/consts';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback="loading">
+      <Routes>
+        <Route path={PAGES.TABLE} element={<TablePage />} />
+      </Routes>
+    </Suspense>
   );
 }
 
